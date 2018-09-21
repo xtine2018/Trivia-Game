@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "zombie";
+    src: url("../images/zombies.ttf");
+}
+
+@font-face {
+    font-family: "bloody";
+    src: url("../images/bloody.ttf");
+}
+
+body {
+    background: url("../images/background.jpg");
+    background-position: center;
+    background-size: 105%;
+    background-repeat: round;
+    background-color: black;
+}
+
+.container {
+    border: dashed 5px white;
+}
+
+.title {
+    font-family: zombie;
+    font-size: 101px;
+    color: rgb(136, 15, 15);
+}
+
+.timer {
+    margin-top: -40px;
+    font-size: 75px;
+    color: white;
+    text-shadow: 5px 5px black;
+    font-family: bloody;
+    text-align: center;
+}
+
+.questions {
+    font-size: 40px;
+    color: black;
+    text-shadow: 1px 1px white;
+    font-family: bloody;
+}
