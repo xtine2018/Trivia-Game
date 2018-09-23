@@ -8,15 +8,13 @@
     src: url("../images/bloody.ttf");
 }
 
-.body1 {
-   background-color: black;
+body {
+   background: url("../images/background.jpg");
 }
 
 .container {
-    background: url("../images/background.jpg");
-    background-position: center;
-    background-size: 157%;
-    background-repeat: no-repeat;
+    margin-top: 25px;
+    background-color: black;
 }
 
 .title {
@@ -27,23 +25,23 @@
 }
 
 .timeRemaining {
-    margin-top: -50px;
-    font-size: 90px;
-    color: black;
+    margin-top: -90px;
+    font-size: 75px;
+    color:rgb(179, 170, 140);
     font-family: bloody;
     text-align: center;
 }
 
 .questions {
     font-size: 30px;
-    color: black;
+    color: white;
     font-family: bloody;
 }
 
-.timer {
-    margin-top: -50px;
-    font-size: 90px;
-    color: black;
+#timer {
+    font-size: 60px;
+    color: rgb(136, 15, 15);
+    text-decoration: underline;
     font-family: bloody;
     text-align: center;
 }

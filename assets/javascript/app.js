@@ -1,6 +1,8 @@
-var count = 60*10;
+var count = 60;
+var audio = new Audio("/Users/cnyokoyama/Documents/UCLA/Homework/Trivia-Game/assets/The Walking Dead.mp3");
 var interval = setInterval(function() {
-    document.getElementById('timer').innerHTML=count + " seconds remaining";
+    audio.play();
+    document.getElementById('timer').innerHTML=count + " seconds";
     count--;
     if(count ===0) {
         clearInterval(time);
