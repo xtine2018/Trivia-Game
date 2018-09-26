@@ -4,13 +4,13 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>The Walking Dead</title>
+    <title>Stranger Things</title>
     <!-- reset stylesheet -->
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <!-- css stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css"/>
     <!-- favicon -->
-    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Added a link to Font Awesome CDN-->
@@ -20,32 +20,26 @@
   </head>
 
 <body>
-    <div class="title">
-        The Walking Dead Trivia
-        </div>
+    <div class="header">
+      STRANGER THINGS
+    </div>
 
-<div class="timeRemaining">
+<div class="container">
 
-Time Remaining:
- <span id="timer"></span>
-</div>
+<button class="btn btn-danger" id="startButton">Start</button>
 
-<div class="container questions">
-<div class="buttons">
-
-<p>1. Sasha and Abraham hid in what kind of office while they were waiting for Daryl to find them in Season 6? a. Car rental *b. Insurance c. Tax preparation</p>
-
-<p>2. When Rick was originally united with the group he wanted to go the CDC, but Shane wanted to go where? * Fort Benning</p>
-
-<p>3. What did Daryl tell Beth he had never eaten? *a. Frozen yogurt b. Gelato c. Sorbet</p>
-
-<p>4. Which of these characters died first? a. Beth b. Tyreese *c. Merle</p>
-
-<p>5. Which weapon was used to kill Shane? a. Gun *b. Knife c. Crossbow</p>
-
-
-<button id="submit">Submit Quiz</button>
-
+<div id=timeLeft></div>
+<div id=currentQuestion></div>
+<div class="question"></div>
+<br>
+<div class="answerOptions"></div>
+<div id=message></div>
+<br>
+<div id=correctedAnswer></div>
+<div id=finalMessage></div>
+<div id=correctAnswers></div>
+<div id=unanswered></div>
+<div id="startOverButton"></div>
 
 </div>
 </div>
@@ -57,6 +51,10 @@ Time Remaining:
 <!-- Added link to the jQuery Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/javascript/app.js"></script>
+<audio id="start_audio1" autoplay="autoplay">
+    <source src="assets/Stranger Things Theme Song.mp3" />
+  </audio><a href="#noscroll" id="mute2"></a>
+
 
 
 
