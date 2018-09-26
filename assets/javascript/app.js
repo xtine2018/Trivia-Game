@@ -161,8 +161,8 @@ function newQuestion() {
         $("#message").empty;
         $("#correctedAnswer").empty;
         $("#finalMessage").html(messages.finished);
-        $("#correctAnswers").html("Correct Answers: " + correctAnswer + "out of " + triviaQuestions.length);
-        $("#incorrectAnswer").html("Incorrect Answers: " + incorrectAnswer + "out of " + triviaQuestions.length);
+        $("#correctAnswers").html("Correct Answers: " + correctAnswer + " out of " + triviaQuestions.length);
+        $("#incorrectAnswer").html("Incorrect Answers: " + incorrectAnswer + " out of " + triviaQuestions.length);
         $("#unanswered").html("Unanswered: " + unanswered);    
     }
 

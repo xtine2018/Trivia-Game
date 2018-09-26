@@ -11,9 +11,15 @@
 .header {
     font-family: bold;
     color: white;
-    font-size: 85px;
+    font-size: 100px;
     text-align: center;
-
+}
+.header2 {
+    font-family: bold;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    margin-top: -60px;
 }
 
 body {
@@ -29,7 +35,7 @@ body {
 
 .question {
     font-size: 25px;
-    color: rgb(147, 27, 27);
+    color: rgb(157, 25, 25);
     font-family: bold;
 
 }
@@ -45,59 +51,59 @@ body {
 #startButton {
     font-family: bold;
     background-color: black;
-    color: rgb(147, 27, 27);
+    color: rgb(157, 25, 25);
     cursor: pointer;
     font-size: 30px;
     margin: 0px 0px 0px 500px;
 }
 
 button:hover{
-    background-color: rgb(136, 15, 15);
+    background-color: rgb(157, 25, 25);
     color: white;
 }
 
 #currentQuestion {
-    color: rgb(147, 27, 27);
+    color: rgb(157, 25, 25);
     font-family: bold;
     font-size: 25px;
 }
 
 .answerOptions {
-    color: rgb(147, 27, 27);
+    color: rgb(157, 25, 25);
     font-family: bold;
     font-size: 25px;
 }
 
 #message {
-    color: rgb(147, 27, 27);
+    color: rgb(157, 25, 25);
     font-family: bold;
     font-size: 25px;
     text-align: center;
 }
 
 #correctedAnswer {
-    color:rgb(147, 27, 27);
+    color:rgb(157, 25, 25);
     font-family: bold;
     font-size: 25px;
     text-align: center;
 }
 
 #correctAnswers {
-    color: rgb(147, 27, 27);
+    color: rgb(157, 25, 25);
     font-family: bold;
     font-size: 25px;
     text-align: center;
 }
 
 #finalMessage {
-    color: rgb(147, 27, 27);
+    color: rgb(157, 25, 25);
     font-family: bold;
     font-size: 25px;
     text-align: center;
 }
 
 #unanswered {
-    color: rgb(147, 27, 27);
+    color: rgb(157, 25, 25);
     font-family: bold;
     font-size: 25px;
     text-align: center;
