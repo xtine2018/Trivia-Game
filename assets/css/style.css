@@ -32,10 +32,11 @@ body {
     margin-top: 25px;
     padding: 30px 5px 30px 5px;
     background-color: black;
+    opacity: 0.85;
 }
 
 .question {
-    font-size: 30px;
+    font-size: 45px;
     color: rgb(157, 25, 25);
     font-family: bold;
 }
@@ -68,7 +69,7 @@ body {
     cursor: pointer;
 }
 
-#message, #correctedAnswer, #correctAnswers, #finalMessage, #unanswered {
+ #correctedAnswer, #correctAnswers, #unanswered {
     color:rgb(157, 25, 25);
     font-family: bold;
     font-size: 30px;
@@ -77,8 +78,26 @@ body {
 #finalMessage {
     color:white;
     font-family: bold;
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
 }
-
-
+#message {
+    color:rgb(157, 25, 25);
+    font-family: bold;
+    font-size: 45px;
+    text-align: center;
+}
+#startOverButton {
+    font-family: bold;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: right;
+}
+#score {
+    color:white;
+    font-family: bold;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}

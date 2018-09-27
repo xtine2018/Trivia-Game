@@ -57,7 +57,6 @@ var triviaQuestions = [{
 
 }];
 
-var questionArray = ["question1", "question2", "question3", "question4", "question5", "question6", "question7", "question8", "question9", "question10"];
 var currentQuestion; 
 var correctAnswer;
 var incorrectAnswer;
@@ -69,12 +68,19 @@ var userSelect;
 var messages = {
     correct: "Correct!",
         incorrect: "Wrong!",
-        timesUp: "Oh no, the Demogorgon got you!",
-        finished: "You've escaped the Demogorgon!"
+        timesUp: "No response?",
+        finished: "The demogorgon almost got you.."
 }
 
 $("#startButton").on("click", function() {
     $(this).hide();
+    newGame();
+});
+
+$('#startOverBtn').on("click", function() {
+    $(this).hide();
+    $("#correctAnswers").empty();
+    $("#score").empty();
     newGame();
 });
 
@@ -114,7 +120,7 @@ function newQuestion() {
 }
 
     function countdown(){
-        seconds = 10;
+        seconds = 2;
         $('#timeLeft').html("Time Remaining: " + seconds);
         answered = true;
         time = setInterval(showCountdown, 1000);
@@ -149,7 +155,7 @@ function newQuestion() {
         }
         else{
             unanswered++;
-            $('#message').html(messages.endTime);
+            $('#message').html(messages.timesUp);
             $('#correctedAnswer').html("The correct answer is: " + rightAnswerText);
             answered = true;
         }
@@ -170,12 +176,21 @@ function newQuestion() {
         $("#finalMessage").html(messages.finished);
         $("#correctAnswers").html("Correct Answers: " + correctAnswer + " out of " + triviaQuestions.length);
         $("#incorrectAnswer").html("Incorrect Answers: " + incorrectAnswer + " out of " + triviaQuestions.length);
-        $("#unanswered").html("Unanswered: " + unanswered);    
+        $("#unanswered").html("Unanswered: " + unanswered);  
+        $("#startOverBtn").addClass('#startButton');
+        $("#startOverBtn").addClass('reset');
+        $("#startOverBtn").show();
+        $("#startOverBtn").html("Try again?");
+        if(correctAnswer >= 5) {
+        $("#score").html("but you made it out alive.");
+        }
+        else {
+        $("#score").html("better be more careful.");
+        }
+
     }
 
     const music = new Audio("assets/Stranger Things Theme Song.mp3");
     $('#startButton').click(e => music.play());
 
     
-
-
