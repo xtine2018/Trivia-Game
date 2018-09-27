@@ -1,3 +1,10 @@
+//Pseudo Code
+//create an array of questions, answer options, and answers
+//create a "start" button that plays audio upon click
+//create a timer that starts when "start" is clicked per question
+    //if it hits zero, the game continues on
+//create correct answers, incorrect answers, and unanswered options and messages to display depending on user input
+
 var triviaQuestions = [{
 
     question: "In what decade is the Netflix original series set?",
@@ -73,8 +80,8 @@ $("#startButton").on("click", function() {
 
 function newGame(){
     $("#finalMessage").empty();
-    $("#correctAnswers").empty();
-    $("#incorectAnswers").empty();
+    $("#correctedAnswers").empty();
+    $("#incorrectAnswers").empty();
     $("#unanswered").empty();
     currentQuestion = 0;
     correctAnswer = 0;
