@@ -6,46 +6,46 @@ var triviaQuestions = [{
 },
 
 {   question: "Where does Season 1's suspenseful opening scene take place?",
-    answerOptions: ["Laboratory", "Spaceship", "The Byers' House", "A Creepy, Derelict Farm in the Middle of Nowhere"],
+    answerOptions: ["-Laboratory", "-Spaceship", "-The Byers' house", "-A creepy, derelict farm in the middle of nowhere"],
     answer: 0
 },
 {   question: "The chilling first Season 1 scene is a reference to which of these prominent 1980s sci-fi films?",
-    answerOptions: ["Star Wars", "Alien", "Blade Runner", "Close Encounters of the Third Kind"],
+    answerOptions: ["-Star Wars", "-Alien", "-Blade Runner", "-Close Encounters of the Third Kind"],
     answer: 1
 
 },
 {   question: "Where does the story occur?",
-    answerOptions: ["Indiana", "Kansas", "Mississippi", "Oklahoma"],
+    answerOptions: ["-Indiana", "-Kansas", "-Mississippi", "-Oklahoma"],
     answer: 0
 
 },
 {   question: "El's favorite food is... ",
-    answerOptions: ["Twinkies", "Eggos", "Pop-Tarts", "Oreos"],
+    answerOptions: ["-Twinkies", "-Eggos", "-Pop-Tarts", "-Oreos"],
     answer: 1
 
 },
 {   question: "What is Eleven's superpower?",
-    answerOptions: ["Telepathy", "Superhuman Speed", "Telekinesis", "Superhuman Strength"],
+    answerOptions: ["-Telepathy", "-Superhuman speed", "-Telekinesis", "-Superhuman strength"],
     answer: 2
 
 },
 {   question: "How does Joyce communicate with her son Will when he is taken?",
-    answerOptions: ["By Painting on the Walls", "Through Sensory Deprivation", "With Christmas Lights", "Through a Mirror"],
+    answerOptions: ["-By painting on the walls", "-Through sensory deprivation", "-With Christmas lights", "-Through a mirror"],
     answer: 2
 
 },
 {   question: "The parallel dimension inhabited by the Demogorgon is referred to as... ",
-    answerOptions: ["The Upside Down", "The Butterfly Effect", "The Dark World", "The Other Place"],
+    answerOptions: ["-The Upside Down", "-The Butterfly Effect", "-The Dark World", "-The Other Place"],
     answer: 0
 
 },
 {   question: "Finish this quote: 'She can't resist these ____!'",
-    answerOptions: ["Skills", "Jokes", "Curls", "Pearls"],
+    answerOptions: ["-Skills", "-Jokes", "-Curls", "-Pearls"],
     answer: 3
 
 },
 {   question: "Name the game that the boys are always playing.",
-    answerOptions: ["Super Mario Bros", "The Legend of Zelda", "Pac-Man", "Dungeons & Dragons"],
+    answerOptions: ["-Super Mario Bros", "-The Legend of Zelda", "-Pac-Man", "-Dungeons & Dragons"],
     answer: 3
 
 }];
@@ -138,12 +138,12 @@ function newQuestion() {
         else if((userSelect != rightAnswerIndex) && (answered == true)){
             incorrectAnswer++;
             $("#message").html(messages.incorrect);
-            $("#correctedAnswer").html("The correct answer was: " + rightAnswerText);
+            $("#correctedAnswer").html("The correct answer is: " + rightAnswerText);
         }
         else{
             unanswered++;
             $('#message').html(messages.endTime);
-            $('#correctedAnswer').html("The correct answer was: " + rightAnswerText);
+            $('#correctedAnswer').html("The correct answer is: " + rightAnswerText);
             answered = true;
         }
 

@@ -19,12 +19,13 @@
     color: white;
     font-size: 100px;
     text-align: center;
-    margin-top: -60px;
+    margin-top: -65px;
 }
 
 body {
    background: url("../images/background.jpg");
    background-size: 100%;
+   background-repeat: no-repeat;
 }
 
 .container {
@@ -34,16 +35,14 @@ body {
 }
 
 .question {
-    font-size: 25px;
+    font-size: 30px;
     color: rgb(157, 25, 25);
     font-family: bold;
-
 }
 
 #timeLeft {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
-    background-color:black;
     font-family: bold;
     text-align: right;
 }
@@ -54,16 +53,10 @@ body {
     color: rgb(157, 25, 25);
     cursor: pointer;
     font-size: 30px;
-    margin: 0px 0px 0px 500px;
-}
-
-button:hover{
-    background-color: rgb(157, 25, 25);
-    color: white;
 }
 
 #currentQuestion {
-    color: rgb(157, 25, 25);
+    color: white;;
     font-family: bold;
     font-size: 25px;
 }
@@ -72,40 +65,19 @@ button:hover{
     color: rgb(157, 25, 25);
     font-family: bold;
     font-size: 25px;
+    cursor: pointer;
 }
 
-#message {
-    color: rgb(157, 25, 25);
-    font-family: bold;
-    font-size: 25px;
-    text-align: center;
-}
-
-#correctedAnswer {
+#message, #correctedAnswer, #correctAnswers, #finalMessage, #unanswered {
     color:rgb(157, 25, 25);
     font-family: bold;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
-
-#correctAnswers {
-    color: rgb(157, 25, 25);
-    font-family: bold;
-    font-size: 25px;
-    text-align: center;
-}
-
 #finalMessage {
-    color: rgb(157, 25, 25);
+    color:white;
     font-family: bold;
-    font-size: 25px;
-    text-align: center;
-}
-
-#unanswered {
-    color: rgb(157, 25, 25);
-    font-family: bold;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
 }
 
