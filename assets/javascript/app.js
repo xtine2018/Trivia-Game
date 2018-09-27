@@ -120,7 +120,7 @@ function newQuestion() {
 }
 
     function countdown(){
-        seconds = 2;
+        seconds = 10;
         $('#timeLeft').html("Time Remaining: " + seconds);
         answered = true;
         time = setInterval(showCountdown, 1000);
