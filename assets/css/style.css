@@ -68,7 +68,6 @@ body {
     font-size: 25px;
     cursor: pointer;
 }
-
  #correctedAnswer, #correctAnswers, #unanswered {
     color:rgb(157, 25, 25);
     font-family: bold;

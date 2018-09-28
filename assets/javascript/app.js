@@ -69,7 +69,7 @@ var messages = {
     correct: "Correct!",
         incorrect: "Wrong!",
         timesUp: "No response?",
-        finished: "The demogorgon almost got you.."
+        finished: "The Demogorgon almost got you.."
 }
 
 $("#startButton").on("click", function() {
