@@ -1,10 +1,10 @@
 # Trivia-Game
 
+<a href="https://imgflip.com/gif/2l05i2"><img src="https://i.imgflip.com/2l05i2.gif" title="made at imgflip.com"/></a>
+
 Overview:
 
 In this assignment, I created a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. I chose the "Advanced Assignment" as shown below.
-
-<a href="https://imgflip.com/gif/2l05i2"><img src="https://i.imgflip.com/2l05i2.gif" title="made at imgflip.com"/></a>
 
 Instructions:
 
